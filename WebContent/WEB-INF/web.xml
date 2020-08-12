@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Web-Shopping</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+   <filter>
+        <filter-name>Set Character Encoding</filter-name>
+        <filter-class>org.apache.catalina.filters.SetCharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+        <init-param>
+            <param-name>ignore</param-name>
+            <param-value>false</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>Set Character Encoding</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    
+    <filter>
+        <filter-name>PrechargementFilter</filter-name>
+        <filter-class>com.shop.filters.PrechargementFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>PrechargementFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+ 
+    <listener>
+	<listener-class>com.shop.utils.InitialisationDaoFactory</listener-class>
+    </listener>
+    
+    <servlet>
+  	<servlet-name>Home</servlet-name>
+  	<servlet-class>com.shop.servlets.Home</servlet-class>
+  	 <load-on-startup>0</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Home</servlet-name>
+  	<url-pattern>/index</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ConnexionClient</servlet-name>
+  	<servlet-class>com.shop.servlets.ConnexionClient</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ConnexionClient</servlet-name>
+  	<url-pattern>/signin</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>Login</servlet-name>
+  	<servlet-class>com.shop.servlets.Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Login</servlet-name>
+  	<url-pattern>/client</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>InscriptionClient</servlet-name>
+  	<servlet-class>com.shop.servlets.InscriptionClient</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>InscriptionClient</servlet-name>
+  	<url-pattern>/signup</url-pattern>
+  </servlet-mapping>
+  
+  <filter>
+  	<filter-name>RestrictionClientFilter</filter-name>
+  	<filter-class>com.shop.filters.RestrictionClientFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>RestrictionClientFilter</filter-name>
+  	<url-pattern>/client/*</url-pattern>
+  	<dispatcher>FORWARD</dispatcher>
+  </filter-mapping>
+  
+  <servlet>
+  		<servlet-name>Deconnexion</servlet-name>
+  		<servlet-class>com.shop.servlets.Deconnexion</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  		<servlet-name>Deconnexion</servlet-name>
+  		<url-pattern>/deconnexion</url-pattern>
+  </servlet-mapping>
+</web-app>

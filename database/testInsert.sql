@@ -1,0 +1,9 @@
+INSERT INTO Product VALUES (1,"montre",20,"electro",120,"img1.jpg","Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.");
+INSERT INTO Product VALUES (2,"101",10,"Hygiénique",25,"img2.jpg","Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.");
+INSERT INTO Product VALUES (3,"torche",15,"bricole",10,"img3.jpg","Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.");
+INSERT INTO Product VALUES (4,"brosseelec",12,"Hygiénique",22.90,"img4.jpg","Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.");
+INSERT INTO Product VALUES (5,"sac",5,"fournitures",14.90,"img5.jpg","Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.");
+INSERT INTO Product VALUES (6,"Benz",4,"Voitures",2000,"img6.jpg","Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.");
+INSERT INTO Product VALUES (7,"USB-charger",70,"electro",40,"img7.jpg","Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.");
+INSERT INTO Product VALUES (8,"Power Bank",50,"electro",30,"img8.jpg","Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.");
+INSERT INTO Product VALUES (9,"Boitier",100,"electro",45,"img9.jpg", "Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.");
