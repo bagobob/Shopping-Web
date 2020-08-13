@@ -15,6 +15,8 @@ INSERT INTO Product VALUES (14,"Boitier",100,"electro",45,"../img/product/produi
 INSERT INTO Product VALUES (15,"Boitier",100,"electro",45,"../img/product/produit-sm-7.png",NULL,NULL);
 INSERT INTO Product VALUES (16,"Boitier",100,"electro",45,"../img/product/produit-sm-8.png",NULL,NULL);
 INSERT INTO Product VALUES (17,"Boitier",100,"electro",45,"../img/product/produit-sm-9.png",NULL,NULL);
+INSERT INTO Product VALUES (18,"Boitier",100,"electro",45,"../img/product/produit-sm-9.png",NULL,NULL);
+
 INSERT INTO Product VALUES
 	(NULL, "Iphone 11 Pro", 22,"Trop gros", 1109, "../img/product/iphone_11_pro.png",NULL,NULL),
 	(NULL, "Iphone 11",12, "Very good", 809, "../img/product/iphone_11.png",NULL,NULL),
